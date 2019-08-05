@@ -7,8 +7,8 @@ import random
 import random
 
 def index(request):
-    return render(request,"raters_app/index.html")
-    
+    return render(request,'raters_app/index.html')
+
 def registration(request):
     print("yo")
     if(request.method=="GET"):
