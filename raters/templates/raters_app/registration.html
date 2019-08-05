@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Singup</title>
+    {% include 'raters_app/css.html' %}
+</head>
+<body>
+<form method="post">
+        {% csrf_token %}
+<label for="{{form.firstname.id_for_label}}">ID</label>
+{{ form.ID }}
+<label for="{{form.lastname.id_for_label}}">age</label>
+{{form.age}}
+<label for="{{form.lastname.id_for_label}}">location</label>
+{{form.location}}
+<label for="{{form.email.id_for_label}}">gender if male enter 1 ; female enter 0 </label>
+{{form.gender}}
+<input type="submit" value="register" class="btn btn-success">
+</form>
+</body>
+</html>
